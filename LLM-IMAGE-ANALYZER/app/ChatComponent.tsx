@@ -21,7 +21,7 @@ const ChatComponent: React.FC<ChatComponentProps> = ({ base64Image }) => {
         // For example, you can send a request to your API to get the custom description
         // Then, you can add the custom description to the chat messages
   
-        // Send a request to the GPT-4 Vision API with the base64 image and the new prompt
+     
         const customDescriptionResponse = await fetch('/api/upload_gpt4v', {
           method: 'POST',
           headers: {
@@ -30,8 +30,7 @@ const ChatComponent: React.FC<ChatComponentProps> = ({ base64Image }) => {
           body: JSON.stringify({
             file: base64Image,
             prompt: parsedFunctionCallArguments.prompt,
-            max_tokens: 100, // replace 100 with the number of tokens you want
-            // Include any other parameters you need
+            max_tokens: 100,
           }),
         });
   
