@@ -5,7 +5,7 @@ Install the dependencies:
 npm install
 npm run build
 
-Create a `.env` file in the root directory and add your OpenAI API key:
+add your OpenAI API key to .enc file
 OPENAI_API_KEY=your_openai_api_key_here
 
 Start the development server:
