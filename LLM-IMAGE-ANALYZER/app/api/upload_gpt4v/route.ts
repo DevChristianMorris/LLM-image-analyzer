@@ -1,15 +1,3 @@
-/**
- * API Route - Image Processing
- * 
- * This API route is designed for processing images within an application using the OpenAI API.
- * It handles the reception of an image file (in base64 format) and an optional custom prompt through a POST request.
- * The route then sends this data to OpenAI for analysis, typically involving image description or any other
- * relevant vision-based task. The response from OpenAI, containing the analysis of the image, is then returned
- * to the user. This functionality is integral for applications requiring advanced image analysis capabilities.
- * 
- * Path: /api/upload_gpt4v
- */
-
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from "openai";
 

@@ -2,7 +2,6 @@ import { experimental_AssistantResponse } from 'ai';
 import OpenAI from 'openai';
 import { MessageContentText } from 'openai/resources/beta/threads/messages/messages';
 
-// Create an OpenAI API client (that's edge friendly!)
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY || '',
 });
